@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <meta name="viewport" content="width=device-width, initial-scale=1.05">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -41,6 +41,22 @@
       .inner {
         width: 720px;
       }
+      
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 1200px) {
+        header {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        #downloads {
+          margin-bottom: 25px;
+        }
+        #download-zip, #download-tar-gz {
+          display: none;
+        }
+        .inner {
+          width: 94%;
+        }
     </style>
   </head>
 
